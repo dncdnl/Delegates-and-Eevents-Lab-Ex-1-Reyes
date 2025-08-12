@@ -29,104 +29,104 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConfirm));
-            this.SN = new System.Windows.Forms.Label();
-            this.P = new System.Windows.Forms.Label();
-            this.LastN = new System.Windows.Forms.Label();
-            this.FirstN = new System.Windows.Forms.Label();
-            this.MiddleN = new System.Windows.Forms.Label();
-            this.A = new System.Windows.Forms.Label();
-            this.CN = new System.Windows.Forms.Label();
-            this.add = new System.Windows.Forms.Label();
+            this.SNLB = new System.Windows.Forms.Label();
+            this.progLB = new System.Windows.Forms.Label();
+            this.LastNLB = new System.Windows.Forms.Label();
+            this.FirstNLB = new System.Windows.Forms.Label();
+            this.MiddleNLB = new System.Windows.Forms.Label();
+            this.ageLB = new System.Windows.Forms.Label();
+            this.CNLB = new System.Windows.Forms.Label();
+            this.addLB = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // SN
+            // SNLB
             // 
-            this.SN.AutoSize = true;
-            this.SN.BackColor = System.Drawing.Color.Azure;
-            this.SN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SN.Location = new System.Drawing.Point(13, 13);
-            this.SN.Name = "SN";
-            this.SN.Size = new System.Drawing.Size(74, 15);
-            this.SN.TabIndex = 0;
-            this.SN.Text = "Student No.:";
+            this.SNLB.AutoSize = true;
+            this.SNLB.BackColor = System.Drawing.Color.Azure;
+            this.SNLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SNLB.Location = new System.Drawing.Point(13, 13);
+            this.SNLB.Name = "SNLB";
+            this.SNLB.Size = new System.Drawing.Size(74, 15);
+            this.SNLB.TabIndex = 0;
+            this.SNLB.Text = "Student No.:";
             // 
-            // P
+            // progLB
             // 
-            this.P.AutoSize = true;
-            this.P.BackColor = System.Drawing.Color.Azure;
-            this.P.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.P.Location = new System.Drawing.Point(13, 39);
-            this.P.Name = "P";
-            this.P.Size = new System.Drawing.Size(54, 15);
-            this.P.TabIndex = 1;
-            this.P.Text = "Pogram:";
+            this.progLB.AutoSize = true;
+            this.progLB.BackColor = System.Drawing.Color.Azure;
+            this.progLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.progLB.Location = new System.Drawing.Point(13, 39);
+            this.progLB.Name = "progLB";
+            this.progLB.Size = new System.Drawing.Size(54, 15);
+            this.progLB.TabIndex = 1;
+            this.progLB.Text = "Pogram:";
             // 
-            // LastN
+            // LastNLB
             // 
-            this.LastN.AutoSize = true;
-            this.LastN.BackColor = System.Drawing.Color.Azure;
-            this.LastN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastN.Location = new System.Drawing.Point(13, 63);
-            this.LastN.Name = "LastN";
-            this.LastN.Size = new System.Drawing.Size(70, 15);
-            this.LastN.TabIndex = 2;
-            this.LastN.Text = "Last Name:";
+            this.LastNLB.AutoSize = true;
+            this.LastNLB.BackColor = System.Drawing.Color.Azure;
+            this.LastNLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNLB.Location = new System.Drawing.Point(13, 63);
+            this.LastNLB.Name = "LastNLB";
+            this.LastNLB.Size = new System.Drawing.Size(70, 15);
+            this.LastNLB.TabIndex = 2;
+            this.LastNLB.Text = "Last Name:";
             // 
-            // FirstN
+            // FirstNLB
             // 
-            this.FirstN.AutoSize = true;
-            this.FirstN.BackColor = System.Drawing.Color.Azure;
-            this.FirstN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstN.Location = new System.Drawing.Point(13, 86);
-            this.FirstN.Name = "FirstN";
-            this.FirstN.Size = new System.Drawing.Size(70, 15);
-            this.FirstN.TabIndex = 3;
-            this.FirstN.Text = "First Name:";
+            this.FirstNLB.AutoSize = true;
+            this.FirstNLB.BackColor = System.Drawing.Color.Azure;
+            this.FirstNLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNLB.Location = new System.Drawing.Point(13, 86);
+            this.FirstNLB.Name = "FirstNLB";
+            this.FirstNLB.Size = new System.Drawing.Size(70, 15);
+            this.FirstNLB.TabIndex = 3;
+            this.FirstNLB.Text = "First Name:";
             // 
-            // MiddleN
+            // MiddleNLB
             // 
-            this.MiddleN.AutoSize = true;
-            this.MiddleN.BackColor = System.Drawing.Color.Azure;
-            this.MiddleN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MiddleN.Location = new System.Drawing.Point(13, 109);
-            this.MiddleN.Name = "MiddleN";
-            this.MiddleN.Size = new System.Drawing.Size(85, 15);
-            this.MiddleN.TabIndex = 4;
-            this.MiddleN.Text = "Middle Name:";
+            this.MiddleNLB.AutoSize = true;
+            this.MiddleNLB.BackColor = System.Drawing.Color.Azure;
+            this.MiddleNLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MiddleNLB.Location = new System.Drawing.Point(13, 109);
+            this.MiddleNLB.Name = "MiddleNLB";
+            this.MiddleNLB.Size = new System.Drawing.Size(85, 15);
+            this.MiddleNLB.TabIndex = 4;
+            this.MiddleNLB.Text = "Middle Name:";
             // 
-            // A
+            // ageLB
             // 
-            this.A.AutoSize = true;
-            this.A.BackColor = System.Drawing.Color.Azure;
-            this.A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A.Location = new System.Drawing.Point(13, 132);
-            this.A.Name = "A";
-            this.A.Size = new System.Drawing.Size(31, 15);
-            this.A.TabIndex = 5;
-            this.A.Text = "Age:";
+            this.ageLB.AutoSize = true;
+            this.ageLB.BackColor = System.Drawing.Color.Azure;
+            this.ageLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageLB.Location = new System.Drawing.Point(13, 132);
+            this.ageLB.Name = "ageLB";
+            this.ageLB.Size = new System.Drawing.Size(31, 15);
+            this.ageLB.TabIndex = 5;
+            this.ageLB.Text = "Age:";
             // 
-            // CN
+            // CNLB
             // 
-            this.CN.AutoSize = true;
-            this.CN.BackColor = System.Drawing.Color.Azure;
-            this.CN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CN.Location = new System.Drawing.Point(13, 155);
-            this.CN.Name = "CN";
-            this.CN.Size = new System.Drawing.Size(73, 15);
-            this.CN.TabIndex = 6;
-            this.CN.Text = "Contact No.:";
+            this.CNLB.AutoSize = true;
+            this.CNLB.BackColor = System.Drawing.Color.Azure;
+            this.CNLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CNLB.Location = new System.Drawing.Point(13, 155);
+            this.CNLB.Name = "CNLB";
+            this.CNLB.Size = new System.Drawing.Size(73, 15);
+            this.CNLB.TabIndex = 6;
+            this.CNLB.Text = "Contact No.:";
             // 
-            // add
+            // addLB
             // 
-            this.add.AutoSize = true;
-            this.add.BackColor = System.Drawing.Color.Azure;
-            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add.Location = new System.Drawing.Point(13, 179);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(54, 15);
-            this.add.TabIndex = 7;
-            this.add.Text = "Address:";
+            this.addLB.AutoSize = true;
+            this.addLB.BackColor = System.Drawing.Color.Azure;
+            this.addLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addLB.Location = new System.Drawing.Point(13, 179);
+            this.addLB.Name = "addLB";
+            this.addLB.Size = new System.Drawing.Size(54, 15);
+            this.addLB.TabIndex = 7;
+            this.addLB.Text = "Address:";
             // 
             // submit
             // 
@@ -145,14 +145,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(283, 256);
             this.Controls.Add(this.submit);
-            this.Controls.Add(this.add);
-            this.Controls.Add(this.CN);
-            this.Controls.Add(this.A);
-            this.Controls.Add(this.MiddleN);
-            this.Controls.Add(this.FirstN);
-            this.Controls.Add(this.LastN);
-            this.Controls.Add(this.P);
-            this.Controls.Add(this.SN);
+            this.Controls.Add(this.addLB);
+            this.Controls.Add(this.CNLB);
+            this.Controls.Add(this.ageLB);
+            this.Controls.Add(this.MiddleNLB);
+            this.Controls.Add(this.FirstNLB);
+            this.Controls.Add(this.LastNLB);
+            this.Controls.Add(this.progLB);
+            this.Controls.Add(this.SNLB);
             this.Name = "FrmConfirm";
             this.Text = "FrmConfirm";
             this.ResumeLayout(false);
@@ -162,14 +162,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label SN;
-        private System.Windows.Forms.Label P;
-        private System.Windows.Forms.Label LastN;
-        private System.Windows.Forms.Label FirstN;
-        private System.Windows.Forms.Label MiddleN;
-        private System.Windows.Forms.Label A;
-        private System.Windows.Forms.Label CN;
-        private System.Windows.Forms.Label add;
+        private System.Windows.Forms.Label SNLB;
+        private System.Windows.Forms.Label progLB;
+        private System.Windows.Forms.Label LastNLB;
+        private System.Windows.Forms.Label FirstNLB;
+        private System.Windows.Forms.Label MiddleNLB;
+        private System.Windows.Forms.Label ageLB;
+        private System.Windows.Forms.Label CNLB;
+        private System.Windows.Forms.Label addLB;
         private System.Windows.Forms.Button submit;
     }
 }

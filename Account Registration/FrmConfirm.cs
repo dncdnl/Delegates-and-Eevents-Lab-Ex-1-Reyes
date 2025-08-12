@@ -12,6 +12,15 @@ namespace Account_Registration
 {
     public partial class FrmConfirm: Form
     {
+        //Delegates for each Variables
+        private StudentInfoClass.DelegateText DelProgram,
+            DelFirstName,
+            DelLastName,
+            DelMiddleName,
+            DelAddress;
+        private StudentInfoClass.DelegateNumber DelAge,
+            DelStudentNumber,
+            DelContactNumber;
         public FrmConfirm()
         {
             InitializeComponent();
