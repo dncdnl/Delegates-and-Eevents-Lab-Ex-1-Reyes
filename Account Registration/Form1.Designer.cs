@@ -168,6 +168,7 @@
             this.cbProgram.Name = "cbProgram";
             this.cbProgram.Size = new System.Drawing.Size(183, 21);
             this.cbProgram.TabIndex = 17;
+            this.cbProgram.SelectedIndexChanged += new System.EventHandler(this.cbProgram_SelectedIndexChanged);
             // 
             // Add
             // 

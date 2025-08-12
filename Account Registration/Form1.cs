@@ -16,7 +16,28 @@ namespace Account_Registration
         {
             InitializeComponent();
         }
-
+        private void cbProgram_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbProgram.Items.Add("\t BS in Information Technology (BSIT)");
+            cbProgram.Items.Add("\t BS in Computer Science (BSCS)");
+            cbProgram.Items.Add("\t BS in Information Systems (BSIS)");
+            cbProgram.Items.Add("\t BS in Business Administration (BSBA)");
+            cbProgram.Items.Add("\t BS in BS in Accountancy (BSA)");
+            cbProgram.Items.Add("\t BS in Accounting Information System (BSAIS)");
+            cbProgram.Items.Add("\t BS in Management Accounting (BSMA)");
+            cbProgram.Items.Add("\t BS in Retail Technology and Consumer Science (BSRTCS)");
+            cbProgram.Items.Add("\t BS in Hospitality Management (BSHM)");
+            cbProgram.Items.Add("\t BS in Culinary Management (BSCM)");
+            cbProgram.Items.Add("\t BS in Tourism Management (BSTM)");
+            cbProgram.Items.Add("\t BS in Computer Engineering (BSCpE)");
+            cbProgram.Items.Add("\t BA in Communication (BACOMM)");
+            cbProgram.Items.Add("\t Bachelor of Multimedia Arts (BMMA)");
+            cbProgram.Items.Add("\t Bachelor of Arts in Psychology");
+            cbProgram.Items.Add("\t Bachelor of Science in Marine Transportation (BSMT)");
+            cbProgram.Items.Add("\t Bachelor of Science in Marine Engineering (BSMarE)");
+            cbProgram.Items.Add("\t Bachelor of Science in Naval Architecture and Marine Engineering (BSNAME)");
+            cbProgram.Items.Add("\t Bachelor of Science in Criminology");
+        }
         private void next_Click(object sender, EventArgs e)
         {
             //Calling Static strings and Long data types
@@ -50,5 +71,6 @@ namespace Account_Registration
                 MessageBox.Show("Registration is Cancelled...");
             }
         }
+
     }
 }
