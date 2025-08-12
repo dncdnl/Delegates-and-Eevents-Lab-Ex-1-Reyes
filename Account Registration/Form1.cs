@@ -28,6 +28,10 @@ namespace Account_Registration
             StudentInfoClass.Age = Convert.ToInt64(tbage.Text);
             StudentInfoClass.ContactNo = Convert.ToInt64(tbcontNum.Text);
             StudentInfoClass.StudentNo = Convert.ToInt64(tbstuNum.Text);
+
+            FrmConfirm confirmForm = new FrmConfirm();
+            DialogResult result = confirmForm.ShowDialog();
+     
         }
     }
 }
