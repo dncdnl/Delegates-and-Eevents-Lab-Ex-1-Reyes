@@ -33,5 +33,17 @@ namespace Account_Registration
             DelStudentNumber = StudentInfoClass.GetStudentNo;
             DelContactNumber = StudentInfoClass.GetStudentNo;
         }
+        private void FrmConfirm_Load(object sender, EventArgs e)
+        {
+            //Displaying Registration Detailes
+            progLB.Text = DelProgram(StudentInfoClass.Program);
+            FirstNLB.Text = DelFirstName(StudentInfoClass.FirstName);
+            LastNLB.Text = DelLastName(StudentInfoClass.LastName);
+            MiddleNLB.Text = DelMiddleName(StudentInfoClass.MiddleName);
+            addLB.Text = DelAddress(StudentInfoClass.Address);
+            ageLB.Text = DelAge(StudentInfoClass.Age).ToString();
+            CNLB.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();
+            SNLB.Text = DelStudentNumber(StudentInfoClass.StudentNo).ToString();
+        }
     }
 }
