@@ -119,7 +119,6 @@
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = "Middle Name";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox5
             // 
@@ -184,7 +183,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(16, 176);
             this.textBox2.MaximumSize = new System.Drawing.Size(400, 400);
-            this.textBox2.MinimumSize = new System.Drawing.Size(20, 100);
+            this.textBox2.MinimumSize = new System.Drawing.Size(50, 100);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(370, 100);
             this.textBox2.TabIndex = 19;
@@ -223,7 +222,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "frmRegistration";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
