@@ -24,6 +24,14 @@ namespace Account_Registration
         public FrmConfirm()
         {
             InitializeComponent();
+            //Initializing delegates
+            DelProgram = StudentInfoClass.GetProgram;
+            DelFirstName = StudentInfoClass.GetFirstName;
+            DelLastName = StudentInfoClass.GetLastName;
+            DelMiddleName = StudentInfoClass.GetMiddleName;
+            DelAge = StudentInfoClass.GetAge;
+            DelStudentNumber = StudentInfoClass.GetStudentNo;
+            DelContactNumber = StudentInfoClass.GetStudentNo;
         }
     }
 }
