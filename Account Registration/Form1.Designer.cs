@@ -190,12 +190,13 @@
             // 
             // next
             // 
+            this.next.BackColor = System.Drawing.Color.SeaShell;
             this.next.Location = new System.Drawing.Point(157, 285);
             this.next.Name = "next";
             this.next.Size = new System.Drawing.Size(75, 23);
             this.next.TabIndex = 20;
             this.next.Text = "Next";
-            this.next.UseVisualStyleBackColor = true;
+            this.next.UseVisualStyleBackColor = false;
             this.next.Click += new System.EventHandler(this.next_Click);
             // 
             // Form1
