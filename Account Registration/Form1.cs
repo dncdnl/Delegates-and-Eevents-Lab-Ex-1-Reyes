@@ -29,9 +29,26 @@ namespace Account_Registration
             StudentInfoClass.ContactNo = Convert.ToInt64(tbcontNum.Text);
             StudentInfoClass.StudentNo = Convert.ToInt64(tbstuNum.Text);
 
+            //show dialog method
             FrmConfirm confirmForm = new FrmConfirm();
             DialogResult result = confirmForm.ShowDialog();
-     
+            //Verifying show dialog and reseting all textbox and combo box
+            if ((result == DialogResult.OK))
+            {
+                MessageBox.Show("Successful Registration!");
+                foreach ( Control ctrl in this.Controls)
+                {
+                    if(ctrl is TextBox ) 
+                        ((TextBox)ctrl).Clear();
+                    if(ctrl is ComboBox)
+                        ((ComboBox)ctrl).SelectedIndex= -1;
+                }
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Registration is Cancelled...");
+            }
         }
     }
 }
