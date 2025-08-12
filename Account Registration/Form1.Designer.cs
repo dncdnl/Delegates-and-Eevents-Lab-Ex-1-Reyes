@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.stuNo = new System.Windows.Forms.Label();
-            this.stuNum = new System.Windows.Forms.TextBox();
+            this.tbstuNum = new System.Windows.Forms.TextBox();
             this.prog = new System.Windows.Forms.Label();
             this.Ln = new System.Windows.Forms.Label();
-            this.Lname = new System.Windows.Forms.TextBox();
+            this.tbLname = new System.Windows.Forms.TextBox();
             this.fn = new System.Windows.Forms.Label();
-            this.Fname = new System.Windows.Forms.TextBox();
+            this.tbFname = new System.Windows.Forms.TextBox();
             this.mn = new System.Windows.Forms.Label();
-            this.Mname = new System.Windows.Forms.TextBox();
+            this.tbMname = new System.Windows.Forms.TextBox();
             this.age = new System.Windows.Forms.Label();
-            this.ageB = new System.Windows.Forms.TextBox();
+            this.tbage = new System.Windows.Forms.TextBox();
             this.contNo = new System.Windows.Forms.Label();
-            this.contNum = new System.Windows.Forms.TextBox();
-            this.program = new System.Windows.Forms.ComboBox();
+            this.tbcontNum = new System.Windows.Forms.TextBox();
+            this.cbProgram = new System.Windows.Forms.ComboBox();
             this.Add = new System.Windows.Forms.Label();
-            this.address = new System.Windows.Forms.TextBox();
-            this.save = new System.Windows.Forms.Button();
+            this.tbAddress = new System.Windows.Forms.TextBox();
+            this.next = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
@@ -59,12 +59,12 @@
             this.stuNo.TabIndex = 0;
             this.stuNo.Text = "Student No.";
             // 
-            // stuNum
+            // tbstuNum
             // 
-            this.stuNum.Location = new System.Drawing.Point(16, 39);
-            this.stuNum.Name = "stuNum";
-            this.stuNum.Size = new System.Drawing.Size(118, 20);
-            this.stuNum.TabIndex = 1;
+            this.tbstuNum.Location = new System.Drawing.Point(16, 39);
+            this.tbstuNum.Name = "tbstuNum";
+            this.tbstuNum.Size = new System.Drawing.Size(118, 20);
+            this.tbstuNum.TabIndex = 1;
             // 
             // prog
             // 
@@ -86,12 +86,12 @@
             this.Ln.TabIndex = 5;
             this.Ln.Text = "Last Name";
             // 
-            // Lname
+            // tbLname
             // 
-            this.Lname.Location = new System.Drawing.Point(16, 82);
-            this.Lname.Name = "Lname";
-            this.Lname.Size = new System.Drawing.Size(118, 20);
-            this.Lname.TabIndex = 6;
+            this.tbLname.Location = new System.Drawing.Point(16, 82);
+            this.tbLname.Name = "tbLname";
+            this.tbLname.Size = new System.Drawing.Size(118, 20);
+            this.tbLname.TabIndex = 6;
             // 
             // fn
             // 
@@ -103,12 +103,12 @@
             this.fn.TabIndex = 7;
             this.fn.Text = "First Name";
             // 
-            // Fname
+            // tbFname
             // 
-            this.Fname.Location = new System.Drawing.Point(140, 81);
-            this.Fname.Name = "Fname";
-            this.Fname.Size = new System.Drawing.Size(117, 20);
-            this.Fname.TabIndex = 8;
+            this.tbFname.Location = new System.Drawing.Point(140, 81);
+            this.tbFname.Name = "tbFname";
+            this.tbFname.Size = new System.Drawing.Size(117, 20);
+            this.tbFname.TabIndex = 8;
             // 
             // mn
             // 
@@ -120,12 +120,12 @@
             this.mn.TabIndex = 9;
             this.mn.Text = "Middle Name";
             // 
-            // Mname
+            // tbMname
             // 
-            this.Mname.Location = new System.Drawing.Point(263, 81);
-            this.Mname.Name = "Mname";
-            this.Mname.Size = new System.Drawing.Size(121, 20);
-            this.Mname.TabIndex = 10;
+            this.tbMname.Location = new System.Drawing.Point(263, 81);
+            this.tbMname.Name = "tbMname";
+            this.tbMname.Size = new System.Drawing.Size(121, 20);
+            this.tbMname.TabIndex = 10;
             // 
             // age
             // 
@@ -137,12 +137,12 @@
             this.age.TabIndex = 11;
             this.age.Text = "Age";
             // 
-            // ageB
+            // tbage
             // 
-            this.ageB.Location = new System.Drawing.Point(19, 125);
-            this.ageB.Name = "ageB";
-            this.ageB.Size = new System.Drawing.Size(115, 20);
-            this.ageB.TabIndex = 12;
+            this.tbage.Location = new System.Drawing.Point(19, 125);
+            this.tbage.Name = "tbage";
+            this.tbage.Size = new System.Drawing.Size(115, 20);
+            this.tbage.TabIndex = 12;
             // 
             // contNo
             // 
@@ -154,20 +154,20 @@
             this.contNo.TabIndex = 14;
             this.contNo.Text = "Contact No.";
             // 
-            // contNum
+            // tbcontNum
             // 
-            this.contNum.Location = new System.Drawing.Point(141, 124);
-            this.contNum.Name = "contNum";
-            this.contNum.Size = new System.Drawing.Size(116, 20);
-            this.contNum.TabIndex = 15;
+            this.tbcontNum.Location = new System.Drawing.Point(141, 124);
+            this.tbcontNum.Name = "tbcontNum";
+            this.tbcontNum.Size = new System.Drawing.Size(116, 20);
+            this.tbcontNum.TabIndex = 15;
             // 
-            // program
+            // cbProgram
             // 
-            this.program.FormattingEnabled = true;
-            this.program.Location = new System.Drawing.Point(146, 39);
-            this.program.Name = "program";
-            this.program.Size = new System.Drawing.Size(183, 21);
-            this.program.TabIndex = 17;
+            this.cbProgram.FormattingEnabled = true;
+            this.cbProgram.Location = new System.Drawing.Point(146, 39);
+            this.cbProgram.Name = "cbProgram";
+            this.cbProgram.Size = new System.Drawing.Size(183, 21);
+            this.cbProgram.TabIndex = 17;
             // 
             // Add
             // 
@@ -179,23 +179,24 @@
             this.Add.TabIndex = 18;
             this.Add.Text = "Address";
             // 
-            // address
+            // tbAddress
             // 
-            this.address.Location = new System.Drawing.Point(16, 176);
-            this.address.MaximumSize = new System.Drawing.Size(400, 400);
-            this.address.MinimumSize = new System.Drawing.Size(50, 100);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(370, 100);
-            this.address.TabIndex = 19;
+            this.tbAddress.Location = new System.Drawing.Point(16, 176);
+            this.tbAddress.MaximumSize = new System.Drawing.Size(400, 400);
+            this.tbAddress.MinimumSize = new System.Drawing.Size(50, 100);
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(370, 100);
+            this.tbAddress.TabIndex = 19;
             // 
-            // save
+            // next
             // 
-            this.save.Location = new System.Drawing.Point(146, 285);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(75, 23);
-            this.save.TabIndex = 20;
-            this.save.Text = "Save";
-            this.save.UseVisualStyleBackColor = true;
+            this.next.Location = new System.Drawing.Point(157, 285);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(75, 23);
+            this.next.TabIndex = 20;
+            this.next.Text = "Next";
+            this.next.UseVisualStyleBackColor = true;
+            this.next.Click += new System.EventHandler(this.next_Click);
             // 
             // Form1
             // 
@@ -203,22 +204,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(398, 320);
-            this.Controls.Add(this.save);
-            this.Controls.Add(this.address);
+            this.Controls.Add(this.next);
+            this.Controls.Add(this.tbAddress);
             this.Controls.Add(this.Add);
-            this.Controls.Add(this.program);
-            this.Controls.Add(this.contNum);
+            this.Controls.Add(this.cbProgram);
+            this.Controls.Add(this.tbcontNum);
             this.Controls.Add(this.contNo);
-            this.Controls.Add(this.ageB);
+            this.Controls.Add(this.tbage);
             this.Controls.Add(this.age);
-            this.Controls.Add(this.Mname);
+            this.Controls.Add(this.tbMname);
             this.Controls.Add(this.mn);
-            this.Controls.Add(this.Fname);
+            this.Controls.Add(this.tbFname);
             this.Controls.Add(this.fn);
-            this.Controls.Add(this.Lname);
+            this.Controls.Add(this.tbLname);
             this.Controls.Add(this.Ln);
             this.Controls.Add(this.prog);
-            this.Controls.Add(this.stuNum);
+            this.Controls.Add(this.tbstuNum);
             this.Controls.Add(this.stuNo);
             this.Name = "Form1";
             this.Text = "frmRegistration";
@@ -230,22 +231,22 @@
         #endregion
 
         private System.Windows.Forms.Label stuNo;
-        private System.Windows.Forms.TextBox stuNum;
+        private System.Windows.Forms.TextBox tbstuNum;
         private System.Windows.Forms.Label prog;
         private System.Windows.Forms.Label Ln;
-        private System.Windows.Forms.TextBox Lname;
+        private System.Windows.Forms.TextBox tbLname;
         private System.Windows.Forms.Label fn;
-        private System.Windows.Forms.TextBox Fname;
+        private System.Windows.Forms.TextBox tbFname;
         private System.Windows.Forms.Label mn;
-        private System.Windows.Forms.TextBox Mname;
+        private System.Windows.Forms.TextBox tbMname;
         private System.Windows.Forms.Label age;
-        private System.Windows.Forms.TextBox ageB;
+        private System.Windows.Forms.TextBox tbage;
         private System.Windows.Forms.Label contNo;
-        private System.Windows.Forms.TextBox contNum;
-        private System.Windows.Forms.ComboBox program;
+        private System.Windows.Forms.TextBox tbcontNum;
+        private System.Windows.Forms.ComboBox cbProgram;
         private System.Windows.Forms.Label Add;
-        private System.Windows.Forms.TextBox address;
-        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.TextBox tbAddress;
+        private System.Windows.Forms.Button next;
         private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
