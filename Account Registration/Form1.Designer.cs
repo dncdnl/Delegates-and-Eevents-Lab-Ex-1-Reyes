@@ -29,173 +29,173 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.stuNo = new System.Windows.Forms.Label();
+            this.stuNum = new System.Windows.Forms.TextBox();
+            this.prog = new System.Windows.Forms.Label();
+            this.Ln = new System.Windows.Forms.Label();
+            this.Lname = new System.Windows.Forms.TextBox();
+            this.fn = new System.Windows.Forms.Label();
+            this.Fname = new System.Windows.Forms.TextBox();
+            this.mn = new System.Windows.Forms.Label();
+            this.Mname = new System.Windows.Forms.TextBox();
+            this.age = new System.Windows.Forms.Label();
+            this.ageB = new System.Windows.Forms.TextBox();
+            this.contNo = new System.Windows.Forms.Label();
+            this.contNum = new System.Windows.Forms.TextBox();
+            this.program = new System.Windows.Forms.ComboBox();
+            this.Add = new System.Windows.Forms.Label();
+            this.address = new System.Windows.Forms.TextBox();
+            this.save = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
-            // label1
+            // stuNo
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(13, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student No.";
+            this.stuNo.AutoSize = true;
+            this.stuNo.BackColor = System.Drawing.Color.Transparent;
+            this.stuNo.Location = new System.Drawing.Point(13, 22);
+            this.stuNo.Name = "stuNo";
+            this.stuNo.Size = new System.Drawing.Size(64, 13);
+            this.stuNo.TabIndex = 0;
+            this.stuNo.Text = "Student No.";
             // 
-            // textBox1
+            // stuNum
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 20);
-            this.textBox1.TabIndex = 1;
+            this.stuNum.Location = new System.Drawing.Point(16, 39);
+            this.stuNum.Name = "stuNum";
+            this.stuNum.Size = new System.Drawing.Size(118, 20);
+            this.stuNum.TabIndex = 1;
             // 
-            // label3
+            // prog
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(140, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Program";
+            this.prog.AutoSize = true;
+            this.prog.BackColor = System.Drawing.Color.Transparent;
+            this.prog.Location = new System.Drawing.Point(140, 22);
+            this.prog.Name = "prog";
+            this.prog.Size = new System.Drawing.Size(46, 13);
+            this.prog.TabIndex = 3;
+            this.prog.Text = "Program";
             // 
-            // label4
+            // Ln
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(16, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Last Name";
+            this.Ln.AutoSize = true;
+            this.Ln.BackColor = System.Drawing.Color.Transparent;
+            this.Ln.Location = new System.Drawing.Point(16, 66);
+            this.Ln.Name = "Ln";
+            this.Ln.Size = new System.Drawing.Size(58, 13);
+            this.Ln.TabIndex = 5;
+            this.Ln.Text = "Last Name";
             // 
-            // textBox3
+            // Lname
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(118, 20);
-            this.textBox3.TabIndex = 6;
+            this.Lname.Location = new System.Drawing.Point(16, 82);
+            this.Lname.Name = "Lname";
+            this.Lname.Size = new System.Drawing.Size(118, 20);
+            this.Lname.TabIndex = 6;
             // 
-            // label5
+            // fn
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(143, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "First Name";
+            this.fn.AutoSize = true;
+            this.fn.BackColor = System.Drawing.Color.Transparent;
+            this.fn.Location = new System.Drawing.Point(143, 66);
+            this.fn.Name = "fn";
+            this.fn.Size = new System.Drawing.Size(57, 13);
+            this.fn.TabIndex = 7;
+            this.fn.Text = "First Name";
             // 
-            // textBox4
+            // Fname
             // 
-            this.textBox4.Location = new System.Drawing.Point(140, 81);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(117, 20);
-            this.textBox4.TabIndex = 8;
+            this.Fname.Location = new System.Drawing.Point(140, 81);
+            this.Fname.Name = "Fname";
+            this.Fname.Size = new System.Drawing.Size(117, 20);
+            this.Fname.TabIndex = 8;
             // 
-            // label6
+            // mn
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(260, 66);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Middle Name";
+            this.mn.AutoSize = true;
+            this.mn.BackColor = System.Drawing.Color.Transparent;
+            this.mn.Location = new System.Drawing.Point(260, 66);
+            this.mn.Name = "mn";
+            this.mn.Size = new System.Drawing.Size(69, 13);
+            this.mn.TabIndex = 9;
+            this.mn.Text = "Middle Name";
             // 
-            // textBox5
+            // Mname
             // 
-            this.textBox5.Location = new System.Drawing.Point(263, 81);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 20);
-            this.textBox5.TabIndex = 10;
+            this.Mname.Location = new System.Drawing.Point(263, 81);
+            this.Mname.Name = "Mname";
+            this.Mname.Size = new System.Drawing.Size(121, 20);
+            this.Mname.TabIndex = 10;
             // 
-            // label7
+            // age
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(16, 109);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Age";
+            this.age.AutoSize = true;
+            this.age.BackColor = System.Drawing.Color.Transparent;
+            this.age.Location = new System.Drawing.Point(16, 109);
+            this.age.Name = "age";
+            this.age.Size = new System.Drawing.Size(26, 13);
+            this.age.TabIndex = 11;
+            this.age.Text = "Age";
             // 
-            // textBox6
+            // ageB
             // 
-            this.textBox6.Location = new System.Drawing.Point(19, 125);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(115, 20);
-            this.textBox6.TabIndex = 12;
+            this.ageB.Location = new System.Drawing.Point(19, 125);
+            this.ageB.Name = "ageB";
+            this.ageB.Size = new System.Drawing.Size(115, 20);
+            this.ageB.TabIndex = 12;
             // 
-            // label9
+            // contNo
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(140, 109);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 13);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Contact No.";
+            this.contNo.AutoSize = true;
+            this.contNo.BackColor = System.Drawing.Color.Transparent;
+            this.contNo.Location = new System.Drawing.Point(140, 109);
+            this.contNo.Name = "contNo";
+            this.contNo.Size = new System.Drawing.Size(64, 13);
+            this.contNo.TabIndex = 14;
+            this.contNo.Text = "Contact No.";
             // 
-            // textBox7
+            // contNum
             // 
-            this.textBox7.Location = new System.Drawing.Point(141, 124);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(116, 20);
-            this.textBox7.TabIndex = 15;
+            this.contNum.Location = new System.Drawing.Point(141, 124);
+            this.contNum.Name = "contNum";
+            this.contNum.Size = new System.Drawing.Size(116, 20);
+            this.contNum.TabIndex = 15;
             // 
-            // comboBox2
+            // program
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(146, 39);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 21);
-            this.comboBox2.TabIndex = 17;
+            this.program.FormattingEnabled = true;
+            this.program.Location = new System.Drawing.Point(146, 39);
+            this.program.Name = "program";
+            this.program.Size = new System.Drawing.Size(183, 21);
+            this.program.TabIndex = 17;
             // 
-            // label10
+            // Add
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(16, 159);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 13);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Address";
+            this.Add.AutoSize = true;
+            this.Add.BackColor = System.Drawing.Color.Transparent;
+            this.Add.Location = new System.Drawing.Point(16, 159);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(45, 13);
+            this.Add.TabIndex = 18;
+            this.Add.Text = "Address";
             // 
-            // textBox2
+            // address
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 176);
-            this.textBox2.MaximumSize = new System.Drawing.Size(400, 400);
-            this.textBox2.MinimumSize = new System.Drawing.Size(50, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(370, 100);
-            this.textBox2.TabIndex = 19;
+            this.address.Location = new System.Drawing.Point(16, 176);
+            this.address.MaximumSize = new System.Drawing.Size(400, 400);
+            this.address.MinimumSize = new System.Drawing.Size(50, 100);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(370, 100);
+            this.address.TabIndex = 19;
             // 
-            // button1
+            // save
             // 
-            this.button1.Location = new System.Drawing.Point(146, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.save.Location = new System.Drawing.Point(146, 285);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(75, 23);
+            this.save.TabIndex = 20;
+            this.save.Text = "Save";
+            this.save.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -203,23 +203,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(398, 320);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.save);
+            this.Controls.Add(this.address);
+            this.Controls.Add(this.Add);
+            this.Controls.Add(this.program);
+            this.Controls.Add(this.contNum);
+            this.Controls.Add(this.contNo);
+            this.Controls.Add(this.ageB);
+            this.Controls.Add(this.age);
+            this.Controls.Add(this.Mname);
+            this.Controls.Add(this.mn);
+            this.Controls.Add(this.Fname);
+            this.Controls.Add(this.fn);
+            this.Controls.Add(this.Lname);
+            this.Controls.Add(this.Ln);
+            this.Controls.Add(this.prog);
+            this.Controls.Add(this.stuNum);
+            this.Controls.Add(this.stuNo);
             this.Name = "Form1";
             this.Text = "frmRegistration";
             this.ResumeLayout(false);
@@ -229,23 +229,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label stuNo;
+        private System.Windows.Forms.TextBox stuNum;
+        private System.Windows.Forms.Label prog;
+        private System.Windows.Forms.Label Ln;
+        private System.Windows.Forms.TextBox Lname;
+        private System.Windows.Forms.Label fn;
+        private System.Windows.Forms.TextBox Fname;
+        private System.Windows.Forms.Label mn;
+        private System.Windows.Forms.TextBox Mname;
+        private System.Windows.Forms.Label age;
+        private System.Windows.Forms.TextBox ageB;
+        private System.Windows.Forms.Label contNo;
+        private System.Windows.Forms.TextBox contNum;
+        private System.Windows.Forms.ComboBox program;
+        private System.Windows.Forms.Label Add;
+        private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.Button save;
         private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
