@@ -45,5 +45,16 @@ namespace Account_Registration
             CNLB.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();
             SNLB.Text = DelStudentNumber(StudentInfoClass.StudentNo).ToString();
         }
+        private void submit_Click(object sender, EventArgs e)
+        {
+            // Event click
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+        // form closing
+        private void frmConfirm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }

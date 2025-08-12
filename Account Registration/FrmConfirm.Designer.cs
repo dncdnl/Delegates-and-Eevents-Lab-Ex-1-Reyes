@@ -137,6 +137,7 @@
             this.submit.TabIndex = 8;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = false;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // FrmConfirm
             // 
