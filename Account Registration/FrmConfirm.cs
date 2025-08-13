@@ -52,10 +52,6 @@ namespace Account_Registration
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
-        // form closing
-        private void frmConfirm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.DialogResult = DialogResult.OK;
-        }
+   
     }
 }
