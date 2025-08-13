@@ -44,7 +44,7 @@ namespace Account_Registration
             StudentInfoClass.FirstName = tbFname.Text;
             StudentInfoClass.LastName = tbLname.Text;
             StudentInfoClass.MiddleName = tbMname.Text;
-            StudentInfoClass.Program = CbProgram.Text.ToString();
+            StudentInfoClass.Program = CbProgram.Text;
             StudentInfoClass.Address = tbAddress.Text;
             StudentInfoClass.Age = Convert.ToInt64(tbage.Text);
             StudentInfoClass.ContactNo = Convert.ToInt64(tbcontNum.Text);
