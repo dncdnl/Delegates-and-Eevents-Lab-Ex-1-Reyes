@@ -22,14 +22,39 @@ namespace Account_Registration
         public static long ContactNo = 0;
         public static long StudentNo = 0;
         //Return types
-        public static string GetFirstName(string FirstName) =>FirstName;
-        public static string GetLastName(string LastName) => LastName;
-        public static string GetMiddleName(string MiddleName) => MiddleName;
-        public static string GetProgram(string Program) => Program;
-        public static string GetAddress(string Address) => Address;
-        public static long GetAge(long Age) => Age;
-        public static long GetContactNO(long ContactNo) => ContactNo;
-        public static long GetStudentNo(long StudentNo) => StudentNo;
+        public static string GetFirstName(string FirstName)
+        {
+            return FirstName;
+        }
+        public static string GetLastName(string LastName)
+        {
+            return LastName;
+        }
+        public static string GetMiddleName(string MiddleName)
+        {
+            return MiddleName;
+        }
+        public static string GetProgram(string Program)
+        {
+            return Program;
+        }
+        public static string GetAddress(string Address)
+        {
+            return Address;
+        }
+        public static long GetAge(long Age)
+        {
+            return Age;
+        }
+        public static long GetContactNo(long ContactNo)
+        {
+            return ContactNo;
+        }
+        public static long GetStudentNo(long StudentNo)
+        {
+            return StudentNo;
+        }
 
     }
+
 }

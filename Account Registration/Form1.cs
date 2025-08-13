@@ -18,25 +18,25 @@ namespace Account_Registration
         }
         private void cbProgram_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cbProgram.Items.Add("\t BS in Information Technology (BSIT)");
-            cbProgram.Items.Add("\t BS in Computer Science (BSCS)");
-            cbProgram.Items.Add("\t BS in Information Systems (BSIS)");
-            cbProgram.Items.Add("\t BS in Business Administration (BSBA)");
-            cbProgram.Items.Add("\t BS in BS in Accountancy (BSA)");
-            cbProgram.Items.Add("\t BS in Accounting Information System (BSAIS)");
-            cbProgram.Items.Add("\t BS in Management Accounting (BSMA)");
-            cbProgram.Items.Add("\t BS in Retail Technology and Consumer Science (BSRTCS)");
-            cbProgram.Items.Add("\t BS in Hospitality Management (BSHM)");
-            cbProgram.Items.Add("\t BS in Culinary Management (BSCM)");
-            cbProgram.Items.Add("\t BS in Tourism Management (BSTM)");
-            cbProgram.Items.Add("\t BS in Computer Engineering (BSCpE)");
-            cbProgram.Items.Add("\t BA in Communication (BACOMM)");
-            cbProgram.Items.Add("\t Bachelor of Multimedia Arts (BMMA)");
-            cbProgram.Items.Add("\t Bachelor of Arts in Psychology");
-            cbProgram.Items.Add("\t Bachelor of Science in Marine Transportation (BSMT)");
-            cbProgram.Items.Add("\t Bachelor of Science in Marine Engineering (BSMarE)");
-            cbProgram.Items.Add("\t Bachelor of Science in Naval Architecture and Marine Engineering (BSNAME)");
-            cbProgram.Items.Add("\t Bachelor of Science in Criminology");
+            CbProgram.Items.Add("\t BS in Information Technology (BSIT)");
+            CbProgram.Items.Add("\t BS in Computer Science (BSCS)");
+            CbProgram.Items.Add("\t BS in Information Systems (BSIS)");
+            CbProgram.Items.Add("\t BS in Business Administration (BSBA)");
+            CbProgram.Items.Add("\t BS in BS in Accountancy (BSA)");
+            CbProgram.Items.Add("\t BS in Accounting Information System (BSAIS)");
+            CbProgram.Items.Add("\t BS in Management Accounting (BSMA)");
+            CbProgram.Items.Add("\t BS in Retail Technology and Consumer Science (BSRTCS)");
+            CbProgram.Items.Add("\t BS in Hospitality Management (BSHM)");
+            CbProgram.Items.Add("\t BS in Culinary Management (BSCM)");
+            CbProgram.Items.Add("\t BS in Tourism Management (BSTM)");
+            CbProgram.Items.Add("\t BS in Computer Engineering (BSCpE)");
+            CbProgram.Items.Add("\t BA in Communication (BACOMM)");
+            CbProgram.Items.Add("\t Bachelor of Multimedia Arts (BMMA)");
+            CbProgram.Items.Add("\t Bachelor of Arts in Psychology");
+            CbProgram.Items.Add("\t Bachelor of Science in Marine Transportation (BSMT)");
+            CbProgram.Items.Add("\t Bachelor of Science in Marine Engineering (BSMarE)");
+            CbProgram.Items.Add("\t Bachelor of Science in Naval Architecture and Marine Engineering (BSNAME)");
+            CbProgram.Items.Add("\t Bachelor of Science in Criminology");
         }
         private void next_Click(object sender, EventArgs e)
         {
@@ -44,7 +44,7 @@ namespace Account_Registration
             StudentInfoClass.FirstName = tbFname.Text;
             StudentInfoClass.LastName = tbLname.Text;
             StudentInfoClass.MiddleName = tbMname.Text;
-            StudentInfoClass.Program = cbProgram.Text.ToString();
+            StudentInfoClass.Program = CbProgram.Text;
             StudentInfoClass.Address = tbAddress.Text;
             StudentInfoClass.Age = Convert.ToInt64(tbage.Text);
             StudentInfoClass.ContactNo = Convert.ToInt64(tbcontNum.Text);

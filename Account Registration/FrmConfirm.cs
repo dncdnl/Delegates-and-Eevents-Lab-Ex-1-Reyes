@@ -29,9 +29,10 @@ namespace Account_Registration
             DelFirstName = StudentInfoClass.GetFirstName;
             DelLastName = StudentInfoClass.GetLastName;
             DelMiddleName = StudentInfoClass.GetMiddleName;
+            DelAddress = StudentInfoClass.GetAddress;
             DelAge = StudentInfoClass.GetAge;
             DelStudentNumber = StudentInfoClass.GetStudentNo;
-            DelContactNumber = StudentInfoClass.GetStudentNo;
+            DelContactNumber = StudentInfoClass.GetContactNo;
         }
         private void FrmConfirm_Load(object sender, EventArgs e)
         {

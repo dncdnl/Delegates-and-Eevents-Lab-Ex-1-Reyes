@@ -42,7 +42,7 @@
             this.tbage = new System.Windows.Forms.TextBox();
             this.contNo = new System.Windows.Forms.Label();
             this.tbcontNum = new System.Windows.Forms.TextBox();
-            this.cbProgram = new System.Windows.Forms.ComboBox();
+            this.CbProgram = new System.Windows.Forms.ComboBox();
             this.Add = new System.Windows.Forms.Label();
             this.tbAddress = new System.Windows.Forms.TextBox();
             this.next = new System.Windows.Forms.Button();
@@ -161,14 +161,34 @@
             this.tbcontNum.Size = new System.Drawing.Size(116, 20);
             this.tbcontNum.TabIndex = 15;
             // 
-            // cbProgram
+            // CbProgram
             // 
-            this.cbProgram.FormattingEnabled = true;
-            this.cbProgram.Location = new System.Drawing.Point(146, 39);
-            this.cbProgram.Name = "cbProgram";
-            this.cbProgram.Size = new System.Drawing.Size(183, 21);
-            this.cbProgram.TabIndex = 17;
-            this.cbProgram.SelectedIndexChanged += new System.EventHandler(this.cbProgram_SelectedIndexChanged);
+            this.CbProgram.FormattingEnabled = true;
+            this.CbProgram.Items.AddRange(new object[] {
+            "BS in Information Technology (BSIT)",
+            "BS in Computer Science (BSCS)",
+            "BS in Information Systems (BSIS)",
+            "BS in Business Administration (BSBA)",
+            "BS in BS in Accountancy (BSA)",
+            "BS in Accounting Information System (BSAIS)",
+            "BS in Management Accounting (BSMA)",
+            "BS in Retail Technology and Consumer Science (BSRTCS)",
+            "BS in Hospitality Management (BSHM)",
+            "BS in Culinary Management (BSCM)",
+            "BS in Tourism Management (BSTM)",
+            "BS in Computer Engineering (BSCpE)",
+            "BA in Communication (BACOMM)",
+            "Bachelor of Multimedia Arts (BMMA)",
+            "Bachelor of Arts in Psychology",
+            "Bachelor of Science in Marine Transportation (BSMT)",
+            "Bachelor of Science in Marine Engineering (BSMarE)",
+            "Bachelor of Science in Naval Architecture and Marine Engineering (BSNAME)",
+            "Bachelor of Science in Criminology"});
+            this.CbProgram.Location = new System.Drawing.Point(146, 39);
+            this.CbProgram.Name = "CbProgram";
+            this.CbProgram.Size = new System.Drawing.Size(183, 21);
+            this.CbProgram.TabIndex = 17;
+            this.CbProgram.SelectedIndexChanged += new System.EventHandler(this.cbProgram_SelectedIndexChanged);
             // 
             // Add
             // 
@@ -209,7 +229,7 @@
             this.Controls.Add(this.next);
             this.Controls.Add(this.tbAddress);
             this.Controls.Add(this.Add);
-            this.Controls.Add(this.cbProgram);
+            this.Controls.Add(this.CbProgram);
             this.Controls.Add(this.tbcontNum);
             this.Controls.Add(this.contNo);
             this.Controls.Add(this.tbage);
@@ -245,7 +265,7 @@
         private System.Windows.Forms.TextBox tbage;
         private System.Windows.Forms.Label contNo;
         private System.Windows.Forms.TextBox tbcontNum;
-        private System.Windows.Forms.ComboBox cbProgram;
+        private System.Windows.Forms.ComboBox CbProgram;
         private System.Windows.Forms.Label Add;
         private System.Windows.Forms.TextBox tbAddress;
         private System.Windows.Forms.Button next;
