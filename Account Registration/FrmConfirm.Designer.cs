@@ -139,7 +139,7 @@
             // submit
             // 
             this.submit.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.submit.Location = new System.Drawing.Point(96, 221);
+            this.submit.Location = new System.Drawing.Point(181, 235);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
             this.submit.TabIndex = 8;
@@ -240,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(283, 256);
+            this.ClientSize = new System.Drawing.Size(423, 270);
             this.Controls.Add(this.lblAddressVal);
             this.Controls.Add(this.lblContactNoVal);
             this.Controls.Add(this.lblAgeVal);

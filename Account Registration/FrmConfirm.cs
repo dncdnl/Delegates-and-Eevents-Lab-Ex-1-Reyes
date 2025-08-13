@@ -36,8 +36,8 @@ namespace Account_Registration
         }
         private void FrmConfirm_Load(object sender, EventArgs e)
         {
-            //Displaying Registration Detailes
-            lblMiddlenVal.Text = DelProgram(StudentInfoClass.Program);
+            //Displaying Registration Details
+            lblProgramVal.Text = DelProgram(StudentInfoClass.Program);
             lblFirstnVal.Text = DelFirstName(StudentInfoClass.FirstName);
             lblLastnVal.Text = DelLastName(StudentInfoClass.LastName);
             lblMiddlenVal.Text = DelMiddleName(StudentInfoClass.MiddleName);

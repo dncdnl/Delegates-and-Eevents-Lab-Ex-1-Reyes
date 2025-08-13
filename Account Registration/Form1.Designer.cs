@@ -205,9 +205,11 @@
             this.tbAddress.Location = new System.Drawing.Point(16, 176);
             this.tbAddress.MaximumSize = new System.Drawing.Size(400, 400);
             this.tbAddress.MinimumSize = new System.Drawing.Size(20, 100);
+            this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(370, 100);
             this.tbAddress.TabIndex = 19;
+            this.tbAddress.TextChanged += new System.EventHandler(this.tbAddress_TextChanged);
             // 
             // next
             // 
