@@ -46,7 +46,6 @@
             this.Add = new System.Windows.Forms.Label();
             this.tbAddress = new System.Windows.Forms.TextBox();
             this.next = new System.Windows.Forms.Button();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // stuNo
@@ -202,9 +201,10 @@
             // 
             // tbAddress
             // 
+            this.tbAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbAddress.Location = new System.Drawing.Point(16, 176);
             this.tbAddress.MaximumSize = new System.Drawing.Size(400, 400);
-            this.tbAddress.MinimumSize = new System.Drawing.Size(50, 100);
+            this.tbAddress.MinimumSize = new System.Drawing.Size(20, 100);
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(370, 100);
             this.tbAddress.TabIndex = 19;
@@ -269,7 +269,6 @@
         private System.Windows.Forms.Label Add;
         private System.Windows.Forms.TextBox tbAddress;
         private System.Windows.Forms.Button next;
-        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 

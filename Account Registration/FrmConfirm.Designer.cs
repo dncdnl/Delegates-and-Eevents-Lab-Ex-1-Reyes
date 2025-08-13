@@ -38,6 +38,14 @@
             this.CNLB = new System.Windows.Forms.Label();
             this.addLB = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
+            this.lblStudentVal = new System.Windows.Forms.Label();
+            this.lblProgramVal = new System.Windows.Forms.Label();
+            this.lblLastnVal = new System.Windows.Forms.Label();
+            this.lblFirstnVal = new System.Windows.Forms.Label();
+            this.lblMiddlenVal = new System.Windows.Forms.Label();
+            this.lblAgeVal = new System.Windows.Forms.Label();
+            this.lblContactNoVal = new System.Windows.Forms.Label();
+            this.lblAddressVal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SNLB
@@ -139,12 +147,108 @@
             this.submit.UseVisualStyleBackColor = false;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
+            // lblStudentVal
+            // 
+            this.lblStudentVal.AutoSize = true;
+            this.lblStudentVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblStudentVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentVal.Location = new System.Drawing.Point(124, 13);
+            this.lblStudentVal.Name = "lblStudentVal";
+            this.lblStudentVal.Size = new System.Drawing.Size(12, 15);
+            this.lblStudentVal.TabIndex = 9;
+            this.lblStudentVal.Text = "-";
+            // 
+            // lblProgramVal
+            // 
+            this.lblProgramVal.AutoSize = true;
+            this.lblProgramVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblProgramVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgramVal.Location = new System.Drawing.Point(124, 39);
+            this.lblProgramVal.Name = "lblProgramVal";
+            this.lblProgramVal.Size = new System.Drawing.Size(12, 15);
+            this.lblProgramVal.TabIndex = 10;
+            this.lblProgramVal.Text = "-";
+            // 
+            // lblLastnVal
+            // 
+            this.lblLastnVal.AutoSize = true;
+            this.lblLastnVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastnVal.Location = new System.Drawing.Point(124, 63);
+            this.lblLastnVal.Name = "lblLastnVal";
+            this.lblLastnVal.Size = new System.Drawing.Size(12, 15);
+            this.lblLastnVal.TabIndex = 11;
+            this.lblLastnVal.Text = "-";
+            // 
+            // lblFirstnVal
+            // 
+            this.lblFirstnVal.AutoSize = true;
+            this.lblFirstnVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblFirstnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstnVal.Location = new System.Drawing.Point(124, 86);
+            this.lblFirstnVal.Name = "lblFirstnVal";
+            this.lblFirstnVal.Size = new System.Drawing.Size(12, 15);
+            this.lblFirstnVal.TabIndex = 12;
+            this.lblFirstnVal.Text = "-";
+            // 
+            // lblMiddlenVal
+            // 
+            this.lblMiddlenVal.AutoSize = true;
+            this.lblMiddlenVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblMiddlenVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMiddlenVal.Location = new System.Drawing.Point(124, 109);
+            this.lblMiddlenVal.Name = "lblMiddlenVal";
+            this.lblMiddlenVal.Size = new System.Drawing.Size(12, 15);
+            this.lblMiddlenVal.TabIndex = 13;
+            this.lblMiddlenVal.Text = "-";
+            // 
+            // lblAgeVal
+            // 
+            this.lblAgeVal.AutoSize = true;
+            this.lblAgeVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblAgeVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgeVal.Location = new System.Drawing.Point(124, 132);
+            this.lblAgeVal.Name = "lblAgeVal";
+            this.lblAgeVal.Size = new System.Drawing.Size(12, 15);
+            this.lblAgeVal.TabIndex = 14;
+            this.lblAgeVal.Text = "-";
+            // 
+            // lblContactNoVal
+            // 
+            this.lblContactNoVal.AutoSize = true;
+            this.lblContactNoVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblContactNoVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactNoVal.Location = new System.Drawing.Point(124, 155);
+            this.lblContactNoVal.Name = "lblContactNoVal";
+            this.lblContactNoVal.Size = new System.Drawing.Size(12, 15);
+            this.lblContactNoVal.TabIndex = 15;
+            this.lblContactNoVal.Text = "-";
+            // 
+            // lblAddressVal
+            // 
+            this.lblAddressVal.AutoSize = true;
+            this.lblAddressVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddressVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressVal.Location = new System.Drawing.Point(124, 179);
+            this.lblAddressVal.Name = "lblAddressVal";
+            this.lblAddressVal.Size = new System.Drawing.Size(12, 15);
+            this.lblAddressVal.TabIndex = 16;
+            this.lblAddressVal.Text = "-";
+            // 
             // FrmConfirm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(283, 256);
+            this.Controls.Add(this.lblAddressVal);
+            this.Controls.Add(this.lblContactNoVal);
+            this.Controls.Add(this.lblAgeVal);
+            this.Controls.Add(this.lblMiddlenVal);
+            this.Controls.Add(this.lblFirstnVal);
+            this.Controls.Add(this.lblLastnVal);
+            this.Controls.Add(this.lblProgramVal);
+            this.Controls.Add(this.lblStudentVal);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.addLB);
             this.Controls.Add(this.CNLB);
@@ -173,5 +277,13 @@
         private System.Windows.Forms.Label CNLB;
         private System.Windows.Forms.Label addLB;
         private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.Label lblStudentVal;
+        private System.Windows.Forms.Label lblProgramVal;
+        private System.Windows.Forms.Label lblLastnVal;
+        private System.Windows.Forms.Label lblFirstnVal;
+        private System.Windows.Forms.Label lblMiddlenVal;
+        private System.Windows.Forms.Label lblAgeVal;
+        private System.Windows.Forms.Label lblContactNoVal;
+        private System.Windows.Forms.Label lblAddressVal;
     }
 }
