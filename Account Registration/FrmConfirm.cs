@@ -37,14 +37,14 @@ namespace Account_Registration
         private void FrmConfirm_Load(object sender, EventArgs e)
         {
             //Displaying Registration Detailes
-            progLB.Text = DelProgram(StudentInfoClass.Program);
-            FirstNLB.Text = DelFirstName(StudentInfoClass.FirstName);
-            LastNLB.Text = DelLastName(StudentInfoClass.LastName);
-            MiddleNLB.Text = DelMiddleName(StudentInfoClass.MiddleName);
-            addLB.Text = DelAddress(StudentInfoClass.Address);
-            ageLB.Text = DelAge(StudentInfoClass.Age).ToString();
-            CNLB.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();
-            SNLB.Text = DelStudentNumber(StudentInfoClass.StudentNo).ToString();
+            lblMiddlenVal.Text = DelProgram(StudentInfoClass.Program);
+            lblFirstnVal.Text = DelFirstName(StudentInfoClass.FirstName);
+            lblLastnVal.Text = DelLastName(StudentInfoClass.LastName);
+            lblMiddlenVal.Text = DelMiddleName(StudentInfoClass.MiddleName);
+            lblAddressVal.Text = DelAddress(StudentInfoClass.Address);
+            lblAgeVal.Text = DelAge(StudentInfoClass.Age).ToString();
+            lblContactNoVal.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();
+            lblStudentVal.Text = DelStudentNumber(StudentInfoClass.StudentNo).ToString();
         }
         private void submit_Click(object sender, EventArgs e)
         {
