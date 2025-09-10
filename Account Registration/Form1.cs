@@ -38,7 +38,15 @@ namespace Account_Registration
             CbProgram.Items.Add("\t Bachelor of Science in Naval Architecture and Marine Engineering (BSNAME)");
             CbProgram.Items.Add("\t Bachelor of Science in Criminology");
         }
-        private void next_Click(object sender, EventArgs e)
+        // Adding items in combobox for the gender
+
+        private void cbGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbGender.Items.Add("\t Female");
+            cbGender.Items.Add("\t Male");
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             //Calling Static strings and Long data types
             StudentInfoClass.FirstName = tbFname.Text;
@@ -57,12 +65,12 @@ namespace Account_Registration
             if ((result == DialogResult.OK))
             {
                 MessageBox.Show("Successful Registration!");
-                foreach ( Control ctrl in this.Controls)
+                foreach (Control ctrl in this.Controls)
                 {
-                    if(ctrl is TextBox ) 
+                    if (ctrl is TextBox)
                         ((TextBox)ctrl).Clear();
-                    if(ctrl is ComboBox)
-                        ((ComboBox)ctrl).SelectedIndex= -1;
+                    if (ctrl is ComboBox)
+                        ((ComboBox)ctrl).SelectedIndex = -1;
                 }
                 this.Close();
             }
@@ -71,12 +79,5 @@ namespace Account_Registration
                 MessageBox.Show("Registration is Cancelled...");
             }
         }
-
-        private void tbAddress_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }
