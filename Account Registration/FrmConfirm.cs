@@ -14,11 +14,13 @@ namespace Account_Registration
     {
         //Delegates for each Variables
         private StudentInfoClass.DelegateText DelProgram,
-            DelFirstName,
-            DelLastName,
-            DelMiddleName,
+            DelFullName,
+            DelAge,
             DelAddress;
-        private StudentInfoClass.DelegateNumber DelAge,
+
+     
+
+        private StudentInfoClass.DelegateNumber
             DelStudentNumber,
             DelContactNumber;
         public FrmConfirm()
@@ -26,9 +28,7 @@ namespace Account_Registration
             InitializeComponent();
             //Initializing delegates
             DelProgram = StudentInfoClass.GetProgram;
-            DelFirstName = StudentInfoClass.GetFirstName;
-            DelLastName = StudentInfoClass.GetLastName;
-            DelMiddleName = StudentInfoClass.GetMiddleName;
+            DelFullName = StudentInfoClass.GetFullName;
             DelAddress = StudentInfoClass.GetAddress;
             DelAge = StudentInfoClass.GetAge;
             DelStudentNumber = StudentInfoClass.GetStudentNo;
@@ -38,9 +38,7 @@ namespace Account_Registration
         {
             //Displaying Registration Details
             lblProgramVal.Text = DelProgram(StudentInfoClass.Program);
-            lblFirstnVal.Text = DelFirstName(StudentInfoClass.FirstName);
-            lblLastnVal.Text = DelLastName(StudentInfoClass.LastName);
-            lblMiddlenVal.Text = DelMiddleName(StudentInfoClass.MiddleName);
+            lblNameVal.Text = DelFullName(StudentInfoClass.FullName);
             lblGenderVal.Text = DelAddress(StudentInfoClass.Address);
             lblAgeVal.Text = DelAge(StudentInfoClass.Age).ToString();
             lblBirthdayVal.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();

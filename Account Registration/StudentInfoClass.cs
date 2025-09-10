@@ -8,34 +8,26 @@ namespace Account_Registration
 {
     public class StudentInfoClass
     {
-        public delegate long DelegateNumber(long number);
+        public delegate int DelegateNumber(int number);
         public delegate string DelegateText(string text);
 
-        //String
-        public static string FirstName = "";
-        public static string LastName = "";
-        public static string MiddleName = "";
+        //String      
+        public static string FullName = "";
         public static string Program = "";
         public static string Address = "";
         public static string Gender = "";
         public static string Birthday = "";
-        //Long
-        public static long Age = 0;
-        public static long ContactNo = 0;
-        public static long StudentNo = 0;
+        public static string Age = "";
+        //int
+        public static int ContactNo = 0;
+        public static int StudentNo = 0;
         //Return types
-        public static string GetFirstName(string FirstName)
+       
+        public static string GetFullName(string FullName)
         {
-            return FirstName;
+            return FullName;
         }
-        public static string GetLastName(string LastName)
-        {
-            return LastName;
-        }
-        public static string GetMiddleName(string MiddleName)
-        {
-            return MiddleName;
-        }
+        
         public static string GetProgram(string Program)
         {
             return Program;
@@ -52,15 +44,15 @@ namespace Account_Registration
         {
             return Birthday;
         }
-        public static long GetAge(long Age)
+        public static string GetAge(string Age)
         {
             return Age;
         }
-        public static long GetContactNo(long ContactNo)
+        public static int GetContactNo(int ContactNo)
         {
             return ContactNo;
         }
-        public static long GetStudentNo(long StudentNo)
+        public static int GetStudentNo(int StudentNo)
         {
             return StudentNo;
         }
