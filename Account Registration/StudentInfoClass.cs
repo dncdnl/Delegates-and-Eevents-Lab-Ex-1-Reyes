@@ -17,6 +17,8 @@ namespace Account_Registration
         public static string MiddleName = "";
         public static string Program = "";
         public static string Address = "";
+        public static string Gender = "";
+        public static string Birthday = "";
         //Long
         public static long Age = 0;
         public static long ContactNo = 0;
@@ -42,6 +44,14 @@ namespace Account_Registration
         {
             return Address;
         }
+        public static string GetGender(string Gender)
+        {
+            return Gender;
+        }
+        public static string GetBirthday(string Birthday)
+        {
+            return Birthday;
+        }
         public static long GetAge(long Age)
         {
             return Age;
@@ -54,6 +64,7 @@ namespace Account_Registration
         {
             return StudentNo;
         }
+
 
     }
 

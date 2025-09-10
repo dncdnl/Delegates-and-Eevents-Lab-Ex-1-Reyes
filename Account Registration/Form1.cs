@@ -54,6 +54,8 @@ namespace Account_Registration
             StudentInfoClass.MiddleName = tbMname.Text;
             StudentInfoClass.Program = CbProgram.Text;
             StudentInfoClass.Address = tbAddress.Text;
+            StudentInfoClass.Gender = cbGender.Text;
+            StudentInfoClass.Birthday = datePickerBirthday.Text;
             StudentInfoClass.Age = Convert.ToInt64(tbage.Text);
             StudentInfoClass.ContactNo = Convert.ToInt64(tbcontNum.Text);
             StudentInfoClass.StudentNo = Convert.ToInt64(tbstuNum.Text);
