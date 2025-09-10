@@ -20,7 +20,7 @@ namespace Account_Registration
 
      
 
-        private StudentInfoClass.DelegateNumber
+        private StudentInfoClass.DelegateNumber 
             DelStudentNumber,
             DelContactNumber;
         public FrmConfirm()

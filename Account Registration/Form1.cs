@@ -5,8 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace Account_Registration
 {
@@ -17,11 +20,51 @@ namespace Account_Registration
             InitializeComponent();
         }
         // Adding new Access Modifier
-        private string fullName;
-        private int Age;
-        private int contactNo;
-        private long studentNo;
+        private string _FullName;
+        private int _Age;
+        private long _ContactNo;
+        private long _StudentNo;
 
+        /////return methods 
+        public long StudentNumber(string studNum)
+        {
+
+            _StudentNo = long.Parse(studNum);
+
+            return _StudentNo;
+        }
+
+        public long ContactNo(string Contact)
+        {
+            if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+            {
+                _ContactNo = long.Parse(Contact);
+            }
+
+            return _ContactNo;
+        }
+
+        public string FullName(string LastName, string FirstName, string MiddleInitial)
+        {
+            if (Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
+            {
+                _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
+            }
+
+            return _FullName;
+        }
+
+        public int Age(string age)
+        {
+            if (Regex.IsMatch(age, @"^[0-9]{1,3}$"))
+            {
+                _Age = Int32.Parse(age);
+            }
+
+            return _Age;
+        }
+
+        // Added the items in combobox for the program
         private void cbProgram_SelectedIndexChanged(object sender, EventArgs e)
         {
             CbProgram.Items.Add("\t BS in Information Technology (BSIT)");
@@ -71,13 +114,7 @@ namespace Account_Registration
             if ((result == DialogResult.OK))
             {
                 MessageBox.Show("Successful Registration!");
-                foreach (Control ctrl in this.Controls)
-                {
-                    if (ctrl is TextBox)
-                        ((TextBox)ctrl).Clear();
-                    if (ctrl is ComboBox)
-                        ((ComboBox)ctrl).SelectedIndex = -1;
-                }
+                
                 this.Close();
             }
             else
