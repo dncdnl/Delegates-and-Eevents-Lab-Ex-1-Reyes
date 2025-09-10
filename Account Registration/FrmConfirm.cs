@@ -46,6 +46,9 @@ namespace Account_Registration
         }
         private void submit_Click(object sender, EventArgs e)
         {
+            // Adding the given code in Step 10 for the Submit button
+            StudentInfoClass.SetFullName = FullName(tbLname.Text, tbFname.Text, tbMname.Text);
+
             // Event click
             this.DialogResult = DialogResult.OK;
             this.Close();

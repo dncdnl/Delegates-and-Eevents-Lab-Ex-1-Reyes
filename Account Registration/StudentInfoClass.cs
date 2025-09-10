@@ -21,8 +21,20 @@ namespace Account_Registration
         //int
         public static int ContactNo = 0;
         public static int StudentNo = 0;
+
+        // Setters
+        //Ints
+        public int SetStudentNo = 0;
+        public int SetContactNo = 0;
+        //Strings
+        public string SetFullName = "";
+        public string SetProgram = "";
+        public string SetAddress = "";
+        public string SetGender = "";
+        public string SetBirthday = "";
+
         //Return types
-       
+
         public static string GetFullName(string FullName)
         {
             return FullName;
