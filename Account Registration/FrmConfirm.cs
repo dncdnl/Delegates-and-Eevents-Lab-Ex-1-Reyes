@@ -41,9 +41,9 @@ namespace Account_Registration
             lblFirstnVal.Text = DelFirstName(StudentInfoClass.FirstName);
             lblLastnVal.Text = DelLastName(StudentInfoClass.LastName);
             lblMiddlenVal.Text = DelMiddleName(StudentInfoClass.MiddleName);
-            lblAddressVal.Text = DelAddress(StudentInfoClass.Address);
+            lblGenderVal.Text = DelAddress(StudentInfoClass.Address);
             lblAgeVal.Text = DelAge(StudentInfoClass.Age).ToString();
-            lblContactNoVal.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();
+            lblBirthdayVal.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();
             lblStudentVal.Text = DelStudentNumber(StudentInfoClass.StudentNo).ToString();
         }
         private void submit_Click(object sender, EventArgs e)

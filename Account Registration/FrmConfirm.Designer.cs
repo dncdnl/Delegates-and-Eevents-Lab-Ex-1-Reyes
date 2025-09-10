@@ -37,13 +37,17 @@
             this.ageLB = new System.Windows.Forms.Label();
             this.CNLB = new System.Windows.Forms.Label();
             this.addLB = new System.Windows.Forms.Label();
-            this.submit = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.lblStudentVal = new System.Windows.Forms.Label();
             this.lblProgramVal = new System.Windows.Forms.Label();
             this.lblLastnVal = new System.Windows.Forms.Label();
             this.lblFirstnVal = new System.Windows.Forms.Label();
             this.lblMiddlenVal = new System.Windows.Forms.Label();
             this.lblAgeVal = new System.Windows.Forms.Label();
+            this.lblBirthdayVal = new System.Windows.Forms.Label();
+            this.lblGenderVal = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblBirthday = new System.Windows.Forms.Label();
             this.lblContactNoVal = new System.Windows.Forms.Label();
             this.lblAddressVal = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -119,7 +123,7 @@
             this.CNLB.AutoSize = true;
             this.CNLB.BackColor = System.Drawing.Color.Azure;
             this.CNLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CNLB.Location = new System.Drawing.Point(13, 155);
+            this.CNLB.Location = new System.Drawing.Point(13, 203);
             this.CNLB.Name = "CNLB";
             this.CNLB.Size = new System.Drawing.Size(73, 15);
             this.CNLB.TabIndex = 6;
@@ -130,31 +134,31 @@
             this.addLB.AutoSize = true;
             this.addLB.BackColor = System.Drawing.Color.Azure;
             this.addLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addLB.Location = new System.Drawing.Point(13, 179);
+            this.addLB.Location = new System.Drawing.Point(13, 227);
             this.addLB.Name = "addLB";
             this.addLB.Size = new System.Drawing.Size(54, 15);
             this.addLB.TabIndex = 7;
             this.addLB.Text = "Address:";
             // 
-            // submit
+            // btnSubmit
             // 
-            this.submit.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.submit.Location = new System.Drawing.Point(181, 235);
-            this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(75, 23);
-            this.submit.TabIndex = 8;
-            this.submit.Text = "Submit";
-            this.submit.UseVisualStyleBackColor = false;
-            this.submit.Click += new System.EventHandler(this.submit_Click);
+            this.btnSubmit.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSubmit.Location = new System.Drawing.Point(165, 279);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 8;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.submit_Click);
             // 
             // lblStudentVal
             // 
             this.lblStudentVal.AutoSize = true;
             this.lblStudentVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblStudentVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentVal.Location = new System.Drawing.Point(124, 13);
             this.lblStudentVal.Name = "lblStudentVal";
-            this.lblStudentVal.Size = new System.Drawing.Size(12, 15);
+            this.lblStudentVal.Size = new System.Drawing.Size(9, 14);
             this.lblStudentVal.TabIndex = 9;
             this.lblStudentVal.Text = "-";
             // 
@@ -162,10 +166,10 @@
             // 
             this.lblProgramVal.AutoSize = true;
             this.lblProgramVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblProgramVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgramVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProgramVal.Location = new System.Drawing.Point(124, 39);
             this.lblProgramVal.Name = "lblProgramVal";
-            this.lblProgramVal.Size = new System.Drawing.Size(12, 15);
+            this.lblProgramVal.Size = new System.Drawing.Size(9, 14);
             this.lblProgramVal.TabIndex = 10;
             this.lblProgramVal.Text = "-";
             // 
@@ -173,10 +177,10 @@
             // 
             this.lblLastnVal.AutoSize = true;
             this.lblLastnVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastnVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastnVal.Location = new System.Drawing.Point(124, 63);
             this.lblLastnVal.Name = "lblLastnVal";
-            this.lblLastnVal.Size = new System.Drawing.Size(12, 15);
+            this.lblLastnVal.Size = new System.Drawing.Size(9, 14);
             this.lblLastnVal.TabIndex = 11;
             this.lblLastnVal.Text = "-";
             // 
@@ -184,10 +188,10 @@
             // 
             this.lblFirstnVal.AutoSize = true;
             this.lblFirstnVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblFirstnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstnVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFirstnVal.Location = new System.Drawing.Point(124, 86);
             this.lblFirstnVal.Name = "lblFirstnVal";
-            this.lblFirstnVal.Size = new System.Drawing.Size(12, 15);
+            this.lblFirstnVal.Size = new System.Drawing.Size(9, 14);
             this.lblFirstnVal.TabIndex = 12;
             this.lblFirstnVal.Text = "-";
             // 
@@ -195,10 +199,10 @@
             // 
             this.lblMiddlenVal.AutoSize = true;
             this.lblMiddlenVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblMiddlenVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMiddlenVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMiddlenVal.Location = new System.Drawing.Point(124, 109);
             this.lblMiddlenVal.Name = "lblMiddlenVal";
-            this.lblMiddlenVal.Size = new System.Drawing.Size(12, 15);
+            this.lblMiddlenVal.Size = new System.Drawing.Size(9, 14);
             this.lblMiddlenVal.TabIndex = 13;
             this.lblMiddlenVal.Text = "-";
             // 
@@ -206,33 +210,77 @@
             // 
             this.lblAgeVal.AutoSize = true;
             this.lblAgeVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblAgeVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgeVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgeVal.Location = new System.Drawing.Point(124, 132);
             this.lblAgeVal.Name = "lblAgeVal";
-            this.lblAgeVal.Size = new System.Drawing.Size(12, 15);
+            this.lblAgeVal.Size = new System.Drawing.Size(9, 14);
             this.lblAgeVal.TabIndex = 14;
             this.lblAgeVal.Text = "-";
+            // 
+            // lblBirthdayVal
+            // 
+            this.lblBirthdayVal.AutoSize = true;
+            this.lblBirthdayVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblBirthdayVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthdayVal.Location = new System.Drawing.Point(124, 155);
+            this.lblBirthdayVal.Name = "lblBirthdayVal";
+            this.lblBirthdayVal.Size = new System.Drawing.Size(9, 14);
+            this.lblBirthdayVal.TabIndex = 15;
+            this.lblBirthdayVal.Text = "-";
+            // 
+            // lblGenderVal
+            // 
+            this.lblGenderVal.AutoSize = true;
+            this.lblGenderVal.BackColor = System.Drawing.Color.Transparent;
+            this.lblGenderVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderVal.Location = new System.Drawing.Point(124, 179);
+            this.lblGenderVal.Name = "lblGenderVal";
+            this.lblGenderVal.Size = new System.Drawing.Size(9, 14);
+            this.lblGenderVal.TabIndex = 16;
+            this.lblGenderVal.Text = "-";
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.Color.Azure;
+            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.Location = new System.Drawing.Point(13, 179);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(51, 15);
+            this.lblGender.TabIndex = 17;
+            this.lblGender.Text = "Gender:";
+            // 
+            // lblBirthday
+            // 
+            this.lblBirthday.AutoSize = true;
+            this.lblBirthday.BackColor = System.Drawing.Color.Azure;
+            this.lblBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthday.Location = new System.Drawing.Point(12, 155);
+            this.lblBirthday.Name = "lblBirthday";
+            this.lblBirthday.Size = new System.Drawing.Size(57, 15);
+            this.lblBirthday.TabIndex = 18;
+            this.lblBirthday.Text = "Birthday: ";
             // 
             // lblContactNoVal
             // 
             this.lblContactNoVal.AutoSize = true;
             this.lblContactNoVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblContactNoVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContactNoVal.Location = new System.Drawing.Point(124, 155);
+            this.lblContactNoVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactNoVal.Location = new System.Drawing.Point(124, 203);
             this.lblContactNoVal.Name = "lblContactNoVal";
-            this.lblContactNoVal.Size = new System.Drawing.Size(12, 15);
-            this.lblContactNoVal.TabIndex = 15;
+            this.lblContactNoVal.Size = new System.Drawing.Size(9, 14);
+            this.lblContactNoVal.TabIndex = 19;
             this.lblContactNoVal.Text = "-";
             // 
             // lblAddressVal
             // 
             this.lblAddressVal.AutoSize = true;
             this.lblAddressVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddressVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddressVal.Location = new System.Drawing.Point(124, 179);
+            this.lblAddressVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressVal.Location = new System.Drawing.Point(124, 227);
             this.lblAddressVal.Name = "lblAddressVal";
-            this.lblAddressVal.Size = new System.Drawing.Size(12, 15);
-            this.lblAddressVal.TabIndex = 16;
+            this.lblAddressVal.Size = new System.Drawing.Size(9, 14);
+            this.lblAddressVal.TabIndex = 20;
             this.lblAddressVal.Text = "-";
             // 
             // FrmConfirm
@@ -240,16 +288,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(423, 270);
+            this.ClientSize = new System.Drawing.Size(423, 314);
             this.Controls.Add(this.lblAddressVal);
             this.Controls.Add(this.lblContactNoVal);
+            this.Controls.Add(this.lblBirthday);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.lblGenderVal);
+            this.Controls.Add(this.lblBirthdayVal);
             this.Controls.Add(this.lblAgeVal);
             this.Controls.Add(this.lblMiddlenVal);
             this.Controls.Add(this.lblFirstnVal);
             this.Controls.Add(this.lblLastnVal);
             this.Controls.Add(this.lblProgramVal);
             this.Controls.Add(this.lblStudentVal);
-            this.Controls.Add(this.submit);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.addLB);
             this.Controls.Add(this.CNLB);
             this.Controls.Add(this.ageLB);
@@ -276,13 +328,17 @@
         private System.Windows.Forms.Label ageLB;
         private System.Windows.Forms.Label CNLB;
         private System.Windows.Forms.Label addLB;
-        private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblStudentVal;
         private System.Windows.Forms.Label lblProgramVal;
         private System.Windows.Forms.Label lblLastnVal;
         private System.Windows.Forms.Label lblFirstnVal;
         private System.Windows.Forms.Label lblMiddlenVal;
         private System.Windows.Forms.Label lblAgeVal;
+        private System.Windows.Forms.Label lblBirthdayVal;
+        private System.Windows.Forms.Label lblGenderVal;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblBirthday;
         private System.Windows.Forms.Label lblContactNoVal;
         private System.Windows.Forms.Label lblAddressVal;
     }
