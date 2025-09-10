@@ -16,6 +16,12 @@ namespace Account_Registration
         {
             InitializeComponent();
         }
+        // Adding new Access Modifier
+        private string fullName;
+        private int Age;
+        private int contactNo;
+        private long studentNo;
+
         private void cbProgram_SelectedIndexChanged(object sender, EventArgs e)
         {
             CbProgram.Items.Add("\t BS in Information Technology (BSIT)");
