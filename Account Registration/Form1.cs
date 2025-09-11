@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace Account_Registration
@@ -28,10 +20,24 @@ namespace Account_Registration
         /////return methods 
         public long StudentNumber(string studNum)
         {
-
-            _StudentNo = long.Parse(studNum);
-
-            return _StudentNo;
+            // Assignning the Argument Exception and Format Exception
+            try
+            {
+                if (string.IsNullOrEmpty(studNum))
+                {
+                    throw new ArgumentException("Student Number cannot be empty.");
+                }
+                _StudentNo = long.Parse(studNum);
+                return _StudentNo;
+            }
+            catch (FormatException)
+            {
+                throw new FormatException("Student Number must be numeric.");
+            }
+            catch (ArgumentNullException enx)
+            {
+                throw enx;
+            }
         }
 
         public long ContactNo(string Contact)
@@ -103,10 +109,10 @@ namespace Account_Registration
             StudentInfoClass.SetProgram = CbProgram.Text;
             StudentInfoClass.SetAddress = tbAddress.Text;
             StudentInfoClass.SetGender = cbGender.Text;
-            StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyyMM-dd");
+            StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyy-MM-dd");
             StudentInfoClass.SetAge = tbage.Text;
             StudentInfoClass.SetContactNo = (int)ContactNo(tbcontNum.Text); ;
-            StudentInfoClass.SetStudentNo = (int)StudentNumber(tbstuNum.Text); ;
+            StudentInfoClass.SetStudentNo = (int)StudentNumber(tbstuNum.Text);
 
             //show dialog method
             FrmConfirm confirmForm = new FrmConfirm();
@@ -115,7 +121,7 @@ namespace Account_Registration
             if ((result == DialogResult.OK))
             {
                 MessageBox.Show("Successful Registration!");
-                
+
                 this.Close();
             }
             else
