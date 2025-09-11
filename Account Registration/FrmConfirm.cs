@@ -16,7 +16,9 @@ namespace Account_Registration
         private StudentInfoClass.DelegateText DelProgram,
             DelFullName,
             DelAge,
-            DelAddress;
+            DelAddress,
+            DelGender,
+            DelBirthday;
 
      
 
@@ -31,18 +33,23 @@ namespace Account_Registration
             DelFullName = StudentInfoClass.GetFullName;
             DelAddress = StudentInfoClass.GetAddress;
             DelAge = StudentInfoClass.GetAge;
+            DelBirthday = StudentInfoClass.GetBirthday;
+            DelGender = StudentInfoClass.GetGender;
             DelStudentNumber = StudentInfoClass.GetStudentNo;
             DelContactNumber = StudentInfoClass.GetContactNo;
         }
         private void FrmConfirm_Load(object sender, EventArgs e)
         {
             //Displaying Registration Details
-            lblProgramVal.Text = DelProgram(StudentInfoClass.Program);
-            lblNameVal.Text = DelFullName(StudentInfoClass.FullName);
-            lblGenderVal.Text = DelAddress(StudentInfoClass.Address);
-            lblAgeVal.Text = DelAge(StudentInfoClass.Age).ToString();
-            lblBirthdayVal.Text = DelContactNumber(StudentInfoClass.ContactNo).ToString();
-            lblStudentVal.Text = DelStudentNumber(StudentInfoClass.StudentNo).ToString();
+
+            lblProgramVal.Text = DelProgram(StudentInfoClass.SetProgram);
+            lblNameVal.Text = DelFullName(StudentInfoClass.SetFullName);
+            lblGenderVal.Text = DelAddress(StudentInfoClass.SetAddress);
+            lblAgeVal.Text = DelAge(StudentInfoClass.SetAge).ToString();
+            lblBirthdayVal.Text = DelBirthday(StudentInfoClass.SetBirthday);
+            lblGenderVal.Text = DelGender(StudentInfoClass.SetGender);
+            lblBirthdayVal.Text = DelContactNumber(StudentInfoClass.SetContactNo).ToString();
+            lblStudentVal.Text = DelStudentNumber(StudentInfoClass.SetStudentNo).ToString();
         }
         private void submit_Click(object sender, EventArgs e)
         {
