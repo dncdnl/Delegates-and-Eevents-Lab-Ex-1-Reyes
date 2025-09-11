@@ -64,6 +64,7 @@ namespace Account_Registration
 
         public string FullName(string LastName, string FirstName, string MiddleInitial)
         {
+            // Using try catch block for ArgumentNullException and FormatException
             try
             {
                 if (string.IsNullOrEmpty(LastName) || string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(MiddleInitial))
@@ -92,12 +93,25 @@ namespace Account_Registration
 
         public int Age(string age)
         {
-            if (Regex.IsMatch(age, @"^[0-9]{1,3}$"))
+            // Using try catch block for OverflowException and FormatException
+            try
             {
-                _Age = Int32.Parse(age);
+                if (!Regex.IsMatch(age, @"^[0-9]{1,3}$"))
+                {
+                    // Manually throw FormatException if regex validation fails
+                    throw new FormatException("Age must be a number.");
+                }
+                else
+                {
+                    _Age = Int32.Parse(age);
+                }
+                return _Age;
             }
-
-            return _Age;
+            // Catch OverflowException if the number is too large for an integer
+            catch (OverflowException)
+            {
+                throw new OverflowException("Age is not Valid.");
+            }
         }
 
         // Added the items in combobox for the program
