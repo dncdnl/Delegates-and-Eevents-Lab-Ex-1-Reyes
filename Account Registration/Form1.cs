@@ -64,13 +64,31 @@ namespace Account_Registration
 
         public string FullName(string LastName, string FirstName, string MiddleInitial)
         {
-            if (Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
+            try
             {
-                _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
-            }
+                if (string.IsNullOrEmpty(LastName) || string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(MiddleInitial))
+                {
+                    // Manually throw ArgumentNullException if any part of the name is empty
+                    throw new ArgumentNullException("Full name parts (Last, First, Middle Initial) cannot be empty.");
+                }
 
-            return _FullName;
+                if (!Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || !Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || !Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
+                {
+                    // Manually throw FormatException if the name contains invalid characters
+                    throw new FormatException("Full name parts must contain only letters.");
+                }
+                else
+                {
+                    _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
+                }
+                return _FullName;
+            }
+            catch (ArgumentNullException ex)
+            {
+                throw ex; // Re-throw to be handled by the calling method
+            }
         }
+
 
         public int Age(string age)
         {
@@ -141,5 +159,6 @@ namespace Account_Registration
                 MessageBox.Show("Registration is Cancelled...");
             }
         }
+
     }
 }

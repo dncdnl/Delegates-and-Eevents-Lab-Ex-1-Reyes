@@ -127,9 +127,9 @@
             this.mn.Font = new System.Drawing.Font("Baskerville Old Face", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mn.Location = new System.Drawing.Point(260, 66);
             this.mn.Name = "mn";
-            this.mn.Size = new System.Drawing.Size(73, 14);
+            this.mn.Size = new System.Drawing.Size(71, 14);
             this.mn.TabIndex = 9;
-            this.mn.Text = "Middle Name";
+            this.mn.Text = "Middle Initial\r\n";
             // 
             // tbMname
             // 
