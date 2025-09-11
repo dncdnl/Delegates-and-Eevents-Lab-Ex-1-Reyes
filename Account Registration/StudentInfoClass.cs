@@ -24,14 +24,15 @@ namespace Account_Registration
 
         // Setters
         //Ints
-        public int SetStudentNo = 0;
-        public int SetContactNo = 0;
+        public static int SetStudentNo = 0;
+        public static int SetContactNo = 0;
         //Strings
-        public string SetFullName = "";
-        public string SetProgram = "";
-        public string SetAddress = "";
-        public string SetGender = "";
-        public string SetBirthday = "";
+        public static string SetFullName = "";
+        public static string SetProgram = "";
+        public static string SetAddress = "";
+        public static string SetGender = "";
+        public static string SetBirthday = "";
+        public static string SetAge = "";
 
         //Return types
 

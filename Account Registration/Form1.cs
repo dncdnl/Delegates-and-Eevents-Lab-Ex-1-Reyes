@@ -97,15 +97,16 @@ namespace Account_Registration
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            //Calling Static strings and Long data types
-            StudentInfoClass.FullName = tbLname.Text;
-            StudentInfoClass.Program = CbProgram.Text;
-            StudentInfoClass.Address = tbAddress.Text;
-            StudentInfoClass.Gender = cbGender.Text;
-            StudentInfoClass.Birthday = datePickerBirthday.Text;
-            StudentInfoClass.Age = tbage.Text;
-            StudentInfoClass.ContactNo = (int)Convert.ToInt64(tbcontNum.Text);
-            StudentInfoClass.StudentNo = (int)Convert.ToInt64(tbstuNum.Text);
+            //Calling Static strings and int data types
+
+            StudentInfoClass.SetFullName = FullName(tbLname.Text, tbFname.Text, tbMname.Text);
+            StudentInfoClass.SetProgram = CbProgram.Text;
+            StudentInfoClass.SetAddress = tbAddress.Text;
+            StudentInfoClass.SetGender = cbGender.Text;
+            StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyyMM-dd");
+            StudentInfoClass.SetAge = tbage.Text;
+            StudentInfoClass.SetContactNo = (int)ContactNo(tbcontNum.Text); ;
+            StudentInfoClass.SetStudentNo = (int)StudentNumber(tbstuNum.Text); ;
 
             //show dialog method
             FrmConfirm confirmForm = new FrmConfirm();
