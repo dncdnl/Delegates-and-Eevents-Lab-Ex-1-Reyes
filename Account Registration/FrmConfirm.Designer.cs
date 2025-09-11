@@ -129,10 +129,10 @@
             // 
             this.lblStudentVal.AutoSize = true;
             this.lblStudentVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblStudentVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentVal.Location = new System.Drawing.Point(124, 13);
             this.lblStudentVal.Name = "lblStudentVal";
-            this.lblStudentVal.Size = new System.Drawing.Size(9, 14);
+            this.lblStudentVal.Size = new System.Drawing.Size(11, 14);
             this.lblStudentVal.TabIndex = 9;
             this.lblStudentVal.Text = "-";
             // 
@@ -140,10 +140,10 @@
             // 
             this.lblProgramVal.AutoSize = true;
             this.lblProgramVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblProgramVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgramVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProgramVal.Location = new System.Drawing.Point(124, 39);
             this.lblProgramVal.Name = "lblProgramVal";
-            this.lblProgramVal.Size = new System.Drawing.Size(9, 14);
+            this.lblProgramVal.Size = new System.Drawing.Size(11, 14);
             this.lblProgramVal.TabIndex = 10;
             this.lblProgramVal.Text = "-";
             // 
@@ -151,10 +151,10 @@
             // 
             this.lblNameVal.AutoSize = true;
             this.lblNameVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblNameVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameVal.Location = new System.Drawing.Point(124, 63);
             this.lblNameVal.Name = "lblNameVal";
-            this.lblNameVal.Size = new System.Drawing.Size(9, 14);
+            this.lblNameVal.Size = new System.Drawing.Size(11, 14);
             this.lblNameVal.TabIndex = 11;
             this.lblNameVal.Text = "-";
             // 
@@ -162,10 +162,10 @@
             // 
             this.lblAgeVal.AutoSize = true;
             this.lblAgeVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblAgeVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgeVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgeVal.Location = new System.Drawing.Point(124, 90);
             this.lblAgeVal.Name = "lblAgeVal";
-            this.lblAgeVal.Size = new System.Drawing.Size(9, 14);
+            this.lblAgeVal.Size = new System.Drawing.Size(11, 14);
             this.lblAgeVal.TabIndex = 14;
             this.lblAgeVal.Text = "-";
             // 
@@ -173,10 +173,10 @@
             // 
             this.lblBirthdayVal.AutoSize = true;
             this.lblBirthdayVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblBirthdayVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthdayVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBirthdayVal.Location = new System.Drawing.Point(124, 114);
             this.lblBirthdayVal.Name = "lblBirthdayVal";
-            this.lblBirthdayVal.Size = new System.Drawing.Size(9, 14);
+            this.lblBirthdayVal.Size = new System.Drawing.Size(11, 14);
             this.lblBirthdayVal.TabIndex = 15;
             this.lblBirthdayVal.Text = "-";
             // 
@@ -184,10 +184,10 @@
             // 
             this.lblGenderVal.AutoSize = true;
             this.lblGenderVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenderVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenderVal.Location = new System.Drawing.Point(124, 138);
             this.lblGenderVal.Name = "lblGenderVal";
-            this.lblGenderVal.Size = new System.Drawing.Size(9, 14);
+            this.lblGenderVal.Size = new System.Drawing.Size(11, 14);
             this.lblGenderVal.TabIndex = 16;
             this.lblGenderVal.Text = "-";
             // 
@@ -217,10 +217,10 @@
             // 
             this.lblContactNoVal.AutoSize = true;
             this.lblContactNoVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblContactNoVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactNoVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContactNoVal.Location = new System.Drawing.Point(124, 163);
             this.lblContactNoVal.Name = "lblContactNoVal";
-            this.lblContactNoVal.Size = new System.Drawing.Size(9, 14);
+            this.lblContactNoVal.Size = new System.Drawing.Size(11, 14);
             this.lblContactNoVal.TabIndex = 19;
             this.lblContactNoVal.Text = "-";
             // 
@@ -228,10 +228,10 @@
             // 
             this.lblAddressVal.AutoSize = true;
             this.lblAddressVal.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddressVal.Font = new System.Drawing.Font("Bodoni MT Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressVal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddressVal.Location = new System.Drawing.Point(124, 188);
             this.lblAddressVal.Name = "lblAddressVal";
-            this.lblAddressVal.Size = new System.Drawing.Size(9, 14);
+            this.lblAddressVal.Size = new System.Drawing.Size(11, 14);
             this.lblAddressVal.TabIndex = 20;
             this.lblAddressVal.Text = "-";
             // 
