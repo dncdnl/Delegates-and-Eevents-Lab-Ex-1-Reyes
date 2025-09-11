@@ -44,11 +44,11 @@ namespace Account_Registration
 
             lblProgramVal.Text = DelProgram(StudentInfoClass.SetProgram);
             lblNameVal.Text = DelFullName(StudentInfoClass.SetFullName);
-            lblGenderVal.Text = DelAddress(StudentInfoClass.SetAddress);
+            lblAddressVal.Text = DelAddress(StudentInfoClass.SetAddress);
             lblAgeVal.Text = DelAge(StudentInfoClass.SetAge).ToString();
             lblBirthdayVal.Text = DelBirthday(StudentInfoClass.SetBirthday);
             lblGenderVal.Text = DelGender(StudentInfoClass.SetGender);
-            lblBirthdayVal.Text = DelContactNumber(StudentInfoClass.SetContactNo).ToString();
+            lblContactNoVal.Text = DelContactNumber(StudentInfoClass.SetContactNo).ToString();
             lblStudentVal.Text = DelStudentNumber(StudentInfoClass.SetStudentNo).ToString();
         }
         private void submit_Click(object sender, EventArgs e)
