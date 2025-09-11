@@ -34,9 +34,9 @@ namespace Account_Registration
             {
                 throw new FormatException("Student Number must be numeric.");
             }
-            catch (ArgumentNullException enx)
+            catch (ArgumentNullException anx)
             {
-                throw enx;
+                throw anx;
             }
         }
 
@@ -147,32 +147,74 @@ namespace Account_Registration
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            //Calling Static strings and int data types
-
-            StudentInfoClass.SetFullName = FullName(tbLname.Text, tbFname.Text, tbMname.Text);
-            StudentInfoClass.SetProgram = CbProgram.Text;
-            StudentInfoClass.SetAddress = tbAddress.Text;
-            StudentInfoClass.SetGender = cbGender.Text;
-            StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyy-MM-dd");
-            StudentInfoClass.SetAge = tbage.Text;
-            StudentInfoClass.SetContactNo = (int)ContactNo(tbcontNum.Text); ;
-            StudentInfoClass.SetStudentNo = (int)StudentNumber(tbstuNum.Text);
-
-            //show dialog method
-            FrmConfirm confirmForm = new FrmConfirm();
-            DialogResult result = confirmForm.ShowDialog();
-            //Verifying show dialog and reseting all textbox and combo box
-            if ((result == DialogResult.OK))
+            try
             {
-                MessageBox.Show("Successful Registration!");
+                //Calling Static strings and int data type
+                StudentInfoClass.SetFullName = FullName(tbLname.Text, tbFname.Text, tbMname.Text);
+                StudentInfoClass.SetProgram = CbProgram.Text;
+                StudentInfoClass.SetAddress = tbAddress.Text;
+                StudentInfoClass.SetGender = cbGender.Text;
+                StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyy-MM-dd");
+                StudentInfoClass.SetAge = tbage.Text;
+                StudentInfoClass.SetContactNo = (int)ContactNo(tbcontNum.Text); ;
+                StudentInfoClass.SetStudentNo = (int)StudentNumber(tbstuNum.Text);
 
-                this.Close();
+                // Check for empty Program and Gender selections
+                if (string.IsNullOrEmpty(StudentInfoClass.SetProgram) || string.IsNullOrEmpty(StudentInfoClass.SetGender))
+                {
+                    throw new ArgumentNullException("Please select a Program and Gender.");
+                }
+
+                //show dialog method
+                FrmConfirm confirmForm = new FrmConfirm();
+                DialogResult result = confirmForm.ShowDialog();
+                //Verifying show dialog and reseting all textbox and combo box
+                if ((result == DialogResult.OK))
+                {
+                    MessageBox.Show("Successful Registration!");
+
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Registration is Cancelled...");
+                }
             }
-            else
+            catch (FormatException fex)
             {
-                MessageBox.Show("Registration is Cancelled...");
+                MessageBox.Show(fex.Message, "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (OverflowException ofx)
+            {
+                MessageBox.Show(ofx.Message, "Overflow Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (ArgumentNullException anx)
+            {
+                MessageBox.Show(anx.Message, "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (ArgumentException aex)
+            {
+                MessageBox.Show(aex.Message, "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // General exception catch-all for any other unforeseen errors
+                MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                // Reset all input fields
+                tbLname.Clear();
+                tbFname.Clear();
+                tbMname.Clear();
+                CbProgram.SelectedIndex = -1;
+                tbAddress.Clear();
+                cbGender.SelectedIndex = -1;
+                datePickerBirthday.Value = DateTime.Today;
+                tbage.Clear();
+                tbcontNum.Clear();
+                tbstuNum.Clear();
             }
         }
-
     }
 }
