@@ -278,8 +278,9 @@
             this.datePickerBirthday.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePickerBirthday.Location = new System.Drawing.Point(19, 219);
             this.datePickerBirthday.Name = "datePickerBirthday";
-            this.datePickerBirthday.Size = new System.Drawing.Size(200, 21);
+            this.datePickerBirthday.Size = new System.Drawing.Size(220, 21);
             this.datePickerBirthday.TabIndex = 25;
+            this.datePickerBirthday.Value = new System.DateTime(2025, 9, 11, 0, 0, 0, 0);
             // 
             // Form1
             // 
