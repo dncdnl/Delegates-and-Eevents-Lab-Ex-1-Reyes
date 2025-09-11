@@ -42,12 +42,24 @@ namespace Account_Registration
 
         public long ContactNo(string Contact)
         {
-            if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+            // Using try catch block for overflow exception
+            try
             {
-                _ContactNo = long.Parse(Contact);
-            }
 
-            return _ContactNo;
+                if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+                {
+                    throw new FormatException("Contact Number must be 10 to 11 digits.");
+                }
+                else
+                {
+                    _ContactNo = long.Parse(Contact);
+                }
+                return _ContactNo;
+            }
+            catch (OverflowException)
+            {
+                throw new OverflowException("The Contact Number you entered is more that 10 to 11 digits");
+            }
         }
 
         public string FullName(string LastName, string FirstName, string MiddleInitial)
